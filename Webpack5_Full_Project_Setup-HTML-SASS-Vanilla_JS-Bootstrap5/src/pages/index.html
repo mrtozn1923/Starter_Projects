@@ -34,7 +34,7 @@
                 <div class="text-container text-white special-fs-24">
                     <p class="p-3 bg-primary">Tebrikler örnek uygulamayı başarıyla çalıştırdınız.</p>
                     <p class="p-3 bg-info">Çalışma ortamını ayağa kaldırabilmek için <span class="badge bg-dark">NodeJS</span> ve <span class="badge bg-dark">NPM</span> yüklü olmalıdır. Benim bilgisayarımda <span class="badge bg-dark">Node v14.15.3</span> ve <span class="badge bg-dark">NPM 6.14.9</span> versiyonları bulunmaktadır. NodJS kurulumu zaten otomatik olarak NPM kurulumu da yapmaktadır. Kurulumu işlemlerini tamamlandıktan sonra <span class="badge bg-dark">npm install</span> komutunu kullanarak <span class="badge bg-dark">package.json</span> içerisinde bulunan tüm paketleri yüklemelisiniz. Bu komut zaten tek seferde ilgili bağımlılıkları yükleyecektir.</p>
-                    <div class="p-3 bg-secondary">
+                    <div class="p-3 bg-secondary mb-3">
                         <p>Üç farklı npm script bulunmaktadır. Package.json dosyasında bu scriptleri inceleyebilirsiniz. Ayrıca yapılandırma dosyalarına da bakmanızı tavsiye ediyorum.</p>
                         <ol>
                             <li class="mt-3">
@@ -49,6 +49,7 @@
                         </ol>
                     </div>
                     <p class="p-3 bg-primary">Bootstrap dosyası node_module altında bulunmaktadır. Projeye dahil olduğu yer <span class="badge bg-dark">main.scss</span> dosyasıdır. Bu dosyaya da <span class="badge bg-dark">vendors/_bootstrap.scss</span>yolunu takip ederek ulaşabilirsiniz.</p>
+                    <p  class="p-3 bg-primary">Ana dizinde bulunan <span class="badge bg-dark">.browserlistrc</span> dosyası Bootstrap için hazırlanan dosyanın aynısıdır. Bootstrap temeli olduğu için destek verdikleri tarayıcılara göre hareket etmek doğru bir yaklaşım olacaktır.</p>
                     <p class="p-3 bg-primary">Proje derlemesi yapılırken <span class="badge bg-dark">index.js</span> kontrol edilmektedir. Burada tüm scss dosyalarının toplanmış olduğu <span class="badge bg-dark">main.scss</span> dahil edilmiştir. Bu dosya içerisindeki tüm bağlı scss dosyaları derlenerek prefixleri ile <span class="badge bg-dark">dist</span> altına çıkartılmaktadır.</p>
                     <p class="p-3 bg-primary"><span class="badge bg-dark">Pages</span> altında oluşturacağınız tüm dosyalara otomatik olarak javascript ve css dosyaları dahil edilmektedir. Yeni bir sayfa eklerken <span class="badge bg-dark">webpack.common.js</span> üzerinde bulunan <span class="badge bg-dark">htmlPageNames</span> isimli diziye oluşturmuş olduğunuz html sayfasının adını yazınız.</p>
                     <p class="p-3 bg-primary">Bootstrap 5 javascript dosyası direkt olarak <span class="badge bg-dark">index.js</span> üzerinde dahil edilmiştir. Bootstrap5 ile <span class="badge bg-dark">JQuery</span> bağımlılığı ortadan kalktığı için JQuery eklenmemiştir. </p>
