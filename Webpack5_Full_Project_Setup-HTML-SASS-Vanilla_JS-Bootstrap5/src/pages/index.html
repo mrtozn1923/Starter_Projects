@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+</head>
+
+<body class="body-image">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="https://github.com/mrtozn1923" target="_blank">Mert Özen</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">İletişim</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <h1 class="text-white bg-danger p-3">HTML + SASS + Vanilla JS + Bootstrap 5</h1>
+                <div class="text-container text-white special-fs-24">
+                    <p class="p-3 bg-primary">Tebrikler örnek uygulamayı başarıyla çalıştırdınız.</p>
+                    <p class="p-3 bg-info">Çalışma ortamını ayağa kaldırabilmek için <span class="badge bg-dark">NodeJS</span> ve <span class="badge bg-dark">NPM</span> yüklü olmalıdır. Benim bilgisayarımda <span class="badge bg-dark">Node v14.15.3</span> ve <span class="badge bg-dark">NPM 6.14.9</span> versiyonları bulunmaktadır. NodJS kurulumu zaten otomatik olarak NPM kurulumu da yapmaktadır. Kurulumu işlemlerini tamamlandıktan sonra <span class="badge bg-dark">npm install</span> komutunu kullanarak <span class="badge bg-dark">package.json</span> içerisinde bulunan tüm paketleri yüklemelisiniz. Bu komut zaten tek seferde ilgili bağımlılıkları yükleyecektir.</p>
+                    <div class="p-3 bg-secondary">
+                        <p>Üç farklı npm script bulunmaktadır. Package.json dosyasında bu scriptleri inceleyebilirsiniz. Ayrıca yapılandırma dosyalarına da bakmanızı tavsiye ediyorum.</p>
+                        <ol>
+                            <li class="mt-3">
+                                <span class="badge bg-dark">npm start</span> komutu ile <span class="badge bg-dark">dist</span> klasörü altında herhangi bir dosya oluşturmadan arkaplanda <span class="badge bg-dark">index.js</span> dosyası ve ilgili yapılandırma dosyaları temel alınarak build sürecinden geçirilerek uygulama varsayılan tarayıcıda ayağa kaldırılır. Bu esnada aslında <span class="badge bg-dark">development</span> sürecinde uygulama çalıştırıldığı için <span class="badge bg-dark">source maps</span> dosyaları kullanılabilir durumda olacaktır. Bu sayede hata ayıklamak kolay olacaktır. Hatanın hangi dosyada olduğu tarayıcı üzerinde bulunabilecektir.
+                            </li>
+                            <li class="mt-3">
+                                <span class="badge bg-dark">npm run build-dev</span> komutu ile uygulama baştan sonra derlenerek <span class="badge bg-dark">dist</span> klasörü altına sıkıştırılmadan <span class="badge bg-dark">source maps</span> dosyaları ile birlikte çıkartılır ancak uygulama çalıştırılmaz.
+                            </li>
+                            <li class="mt-3">
+                                <span class="badge bg-dark">npm run build-prod</span> komutu ile uygulama baştan sonra derlenerek <span class="badge bg-dark">dist</span> klasörü altına sıkıştırılarak <span class="badge bg-dark">source maps</span> dosyaları oluşturulmadan çıkartılır ve uygulama çalıştırılmaz.
+                            </li>
+                        </ol>
+                    </div>
+                    <p class="p-3 bg-primary">Bootstrap dosyası node_module altında bulunmaktadır. Projeye dahil olduğu yer <span class="badge bg-dark">main.scss</span> dosyasıdır. Bu dosyaya da <span class="badge bg-dark">vendors/_bootstrap.scss</span>yolunu takip ederek ulaşabilirsiniz.</p>
+                    <p class="p-3 bg-primary">Proje derlemesi yapılırken <span class="badge bg-dark">index.js</span> kontrol edilmektedir. Burada tüm scss dosyalarının toplanmış olduğu <span class="badge bg-dark">main.scss</span> dahil edilmiştir. Bu dosya içerisindeki tüm bağlı scss dosyaları derlenerek prefixleri ile <span class="badge bg-dark">dist</span> altına çıkartılmaktadır.</p>
+                    <p class="p-3 bg-primary"><span class="badge bg-dark">Pages</span> altında oluşturacağınız tüm dosyalara otomatik olarak javascript ve css dosyaları dahil edilmektedir. Yeni bir sayfa eklerken <span class="badge bg-dark">webpack.common.js</span> üzerinde bulunan <span class="badge bg-dark">htmlPageNames</span> isimli diziye oluşturmuş olduğunuz html sayfasının adını yazınız.</p>
+                    <p class="p-3 bg-primary">Bootstrap 5 javascript dosyası direkt olarak <span class="badge bg-dark">index.js</span> üzerinde dahil edilmiştir. Bootstrap5 ile <span class="badge bg-dark">JQuery</span> bağımlılığı ortadan kalktığı için JQuery eklenmemiştir. </p>
+                    <p class="p-3 bg-primary"> Kendinize ait özel <span class="badge bg-dark">Javascript</span> kodlarınızı <span class="badge bg-dark">src/js</span> yolu altında oluşturup <span class="badge bg-dark">app.js</span> dosyasına dahil edebilirsiniz. App.js dosyasıda index.js dosyasında olduğu için otomatik olarak tüm js dosyaları <span class="badge bg-dark">babel</span> aracılığıyla derlenip ES5(ES2009) versiyonuna çevrilerek sayfalarınıza dahil edilecektir.</p>
+                    <p class="p-3 bg-primary">Bootstrap özellikleri veya biçimlendirmeleri yeterli gelmezse kendi css kodlarınızı <span class="badge bg-dark">scss</span> klasörü altında bulunan dosyalarda oluşturabilirsiniz. Düz CSS kodu yazmış olsanızda problem olmayacaktır. Ancak SASS(SCSS) öğrenmeniz yararınıza olacaktır. Bu dosyaların tamamı tek bir noktadan yönetilmektedir. Bu dosya <span class="badge bg-dark">main.scss</span> dosyasıdır. Buraya dahil edilmeyen hiçbir kod derlenmez.</p>
+                    <p class="p-3 bg-primary"><span class="badge bg-dark">SCSS</span> klasörünü istediğiniz gibi özelleştirebilirsiniz. Ancak <span class="badge bg-dark">main.scss</span> dosyasında ilgili değişiklikleri, ekleme, çıkarma işlemlerini gerçekleştirmelisiniz.</p>
+                    <p class="p-3 bg-danger">Sonuç olarak tüm bu yapı tek bir <span class="badge bg-dark">Javascript(ES5)</span> ve tek bir <span class="badge bg-dark">CSS(POSTCSS-Autoprefixer)</span> dosyası haline dönüştürlecektir. Ayrıca statik sayfaların herbirine bu dosyalar otomatik olarak enjekte edilecektir. Aynı şekilde örnek olarak sizlere bırakmış olduğum bir <span class="badge bg-dark">img</span> etiketi ile görsel ekleme işlemi ve <span class="badge bg-dark">dark-theme.scss</span> içindeki arkaplana <span class="badge bg-dark">svg</span> dosyası ekleme işlemindeki görsel unsurlarda <span class="badge bg-dark">dist/images</span> klasörü altında yerlerini alacaklardır. Bu dosyaların bağlantılarıda otomatik olarak güncellenecektir.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

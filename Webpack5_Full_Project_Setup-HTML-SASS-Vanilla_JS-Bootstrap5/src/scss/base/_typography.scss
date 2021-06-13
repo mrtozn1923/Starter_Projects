@@ -1,0 +1,7 @@
+$font-sizes: 16,18,24,32,36,48;
+
+@each $font-size in $font-sizes {
+    .special-fs-#{$font-size}{
+        font-size:$font-size+px;
+    }
+}
