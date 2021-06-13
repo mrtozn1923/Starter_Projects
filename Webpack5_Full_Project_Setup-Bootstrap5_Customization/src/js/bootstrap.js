@@ -1,0 +1,13 @@
+import './alert';
+import './base-component';
+import './button';
+import './carousel';
+import './collapse';
+import './modal';
+import './offcanvas';
+import './popover';
+import './scrollspy';
+import './tab';
+import './toast';
+import './tooltip';
+import './dropdown';
