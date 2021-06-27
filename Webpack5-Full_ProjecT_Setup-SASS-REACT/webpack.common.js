@@ -7,7 +7,7 @@ module.exports={
     plugins:[new CleanWebpackPlugin(),new MiniCssExtractPlugin(),new HtmlWebpackPlugin({
         template:"./src/index.html"
     })],
-    entry:'index.js',
+    entry:'./src/index.js',
     output:{
         path:path.resolve(__dirname,"dist"),
         assetModuleFilename:"images/[hash][ext][query]",
