@@ -9,6 +9,7 @@ module.exports=merge(common,{
         contentBase: ["./dist","./src/index.html"],
         // contentBase: "./dist",
         hot:true,
-        watchContentBase: true
+        watchContentBase: true,
+        historyApiFallback:true //react-router için gerekli
     }
 });
