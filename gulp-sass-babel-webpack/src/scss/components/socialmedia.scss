@@ -1,0 +1,16 @@
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & a{
+        text-decoration: none;
+        padding: 5px 10px;
+        margin: 0 5px;
+        background-color: rgb(33, 31, 31);
+        color: white;
+        transition: transform .4s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
