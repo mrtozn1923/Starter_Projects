@@ -1,0 +1,17 @@
+[
+   {
+      "id": "0",
+      "fullName": "Mert Özen",
+      "age": "28"
+   },
+   {
+      "id": "1",
+      "fullName": "Mehmet Özen",
+      "age": "26"
+   },
+   {
+      "id": "2",
+      "fullName": "Mesut Özen",
+      "age": "24"
+   }
+]

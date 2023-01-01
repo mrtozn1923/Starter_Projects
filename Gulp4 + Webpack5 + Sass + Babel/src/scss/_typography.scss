@@ -1,0 +1,253 @@
+@use 'variables' as *;
+@use 'breakpoints' as *;
+
+
+@include xs{
+    h1{
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    h2{
+        font-size: 26px;
+        line-height: 34px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    h3{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    h4{
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    h5{
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    h6{
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    p,li,span,a{
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: $fw-regular;
+        &.medium{
+            font-weight: $fw-medium;
+        }
+        &.semibold{
+            font-weight: $fw-semibold;
+        }
+    }
+    ul{
+        ul{
+            margin-left: 10px;
+        }
+    }
+}
+
+@include md{
+    h1{
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    h2{
+        font-size: 28px;
+        line-height: 34px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    h3{
+        font-size: 26px;
+        line-height: 32px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    h4{
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    h5{
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    h6{
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    p,li,span,a{
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: $fw-regular;
+        &.medium{
+            font-weight: $fw-medium;
+        }
+        &.semibold{
+            font-weight: $fw-semibold;
+        }
+    }
+    ul{
+        ul{
+            margin-left: 30px;
+        }
+    }
+}
+
+@include lg{
+    h1{
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    h2{
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    h3{
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    h4{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    h5{
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    h6{
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: $fw-bold;
+        &.semibold{
+            font-weight: $fw-semibold; 
+        }
+        &.medium{
+            font-weight: $fw-medium; 
+        }
+    }
+    p,li,span,a{
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: $fw-regular;
+        &.medium{
+            font-weight: $fw-medium;
+        }
+        &.semibold{
+            font-weight: $fw-semibold;
+        }
+    }
+}

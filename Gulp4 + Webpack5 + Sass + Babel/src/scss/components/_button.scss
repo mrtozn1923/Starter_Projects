@@ -1,0 +1,100 @@
+@use '../variables' as *;
+@use '../breakpoints' as *;
+
+@include xs{
+    .btn{
+        padding: 10px 30px;
+        font-size: 12px;
+        font-weight: $fw-medium;
+        transition: background-color .5s ease-in-out;
+        cursor: pointer;
+        
+        &.btn-primary{
+            background-color: $primary;
+            color: white;
+            border: 2px solid $primary;
+            &:hover{
+                background-color: white;
+                border: 2px solid $primary;
+                color: $primary;
+            }
+            &.hover-none:hover{
+                background-color: $primary;
+                color: white;
+                border: 2px solid $primary;
+                opacity: 0.8;
+            }
+        }
+        &.btn-primary-outline{
+            background-color: white;
+            border: 2px solid $primary;
+            color: $primary;
+            &:hover{
+                background-color: $primary;
+                border: 2px solid $primary;
+                color: white;
+            }
+            &.hover-none:hover{
+                background-color: white;
+                border: 2px solid $primary;
+                color: $primary;
+            }
+        }
+        &.btn-secondary{
+            background-color: $secondary;
+            border: 2px solid $secondary;
+            color: white;
+            &:hover{
+                background-color: white;
+                border: 2px solid $secondary;
+                color: $secondary;  
+            }
+            &.hover-none:hover{
+                background-color: $secondary;
+                border: 2px solid $secondary;
+                color: white;
+                opacity: 0.8;
+            }
+        }
+        &.btn-secondary-outline{
+            background-color: white;
+            border: 2px solid $secondary;
+            color: $secondary;
+            &:hover{
+                background-color: $secondary;
+                border: 2px solid $secondary;
+                color: white;  
+            }
+            &.hover-none:hover{
+                background-color: white;
+                border: 2px solid $secondary;
+                color: $secondary;
+                opacity: 0.8;
+            }
+        }
+        &.btn-rounded{
+            border-radius: 30px;
+        }
+    }
+}
+
+@include sm{
+    .btn{
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+}
+
+@include md{
+    .btn{
+        padding: 15px 60px;
+        font-size: 16px;
+    }
+}
+
+@include lg{
+    .btn{
+        padding: 15px 50px;
+        font-size: 16px;
+    }
+}

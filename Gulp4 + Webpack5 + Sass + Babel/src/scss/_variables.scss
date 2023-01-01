@@ -1,0 +1,108 @@
+// colors
+$primary: #CE0E2D;
+$secondary: #1F3B64;
+$background-primary:#FFFFFF;
+$background-secondary:#EAEEF3;
+$text-gray:rgba(102, 102, 102, 1);
+
+$gray100:#0A0A0A;
+$gray90:#424242;
+$gray80:#616161;
+$gray70:#757575;
+$gray60:#9E9E9E;
+$gray50:#C2C2C2;
+$gray40:#E0E0E0;
+$gray30:#EDEDED;
+$gray20:#F5F5F5;
+
+$images-folder:"/images/";
+
+// breakpoints
+$grid-breakpoints: (
+  "xs": 0,
+  "sm": 390px,
+  "md": 768px,
+  "lg": 1280px,
+  "xl": 1366px,
+  "xxl":1440px,
+  "xxxl":1920px
+);
+
+$container-max-widths: (
+  "sm": 390px,
+  "md": 768px,
+  "lg": 1280px,
+  "xl": 1366px,
+  "xxl":1440px,
+);
+
+// grid system
+$grid-columns: 12;
+$grid-gaps: (
+  "0": 0,
+  "1": 10px,
+  "2": 20px,
+  "3": 30px,
+);
+
+// font-weight
+$fw-light:300;
+$fw-regular:400;
+$fw-medium:500;
+$fw-semibold:600;
+$fw-bold:700;
+
+// text size
+$text-size: (
+  "small": 12px,
+  "medium": 14px,
+  "large": 16px,
+);
+
+// space size
+$space-size: (
+  "0": 0px,
+  "4": 4px,
+  "8": 8px,
+  "10": 10px,
+  "20": 20px,
+  "30": 30px,
+  "40": 40px,
+  "60": 60px,
+  "80": 80px,
+  "100": 100px,
+  "120":120px
+);
+
+$icon-size:(
+  "12":12px,
+  "14":14px,
+  "16":16px,
+  "18":18px,
+  "24":24px,
+  "36":36px,
+  "48":48px,
+);
+
+// position key
+$position-key:(
+  "t":"top",
+  "r":"right",
+  "b":"bottom",
+  "l":"left",
+  "p":"p",
+  "m":"m",
+  "x":"x",
+  "y":"y"
+);
+
+// position key
+$display-prop:(
+  "inline":inline,
+  "inline-block":inline-block,
+  "block":block,
+  "flex":flex,
+  "inline-flex":inline-flex,
+  "none":none,
+  "initial":initial
+);

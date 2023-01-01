@@ -1,0 +1,58 @@
+@use 'variables' as *;
+@use 'breakpoints' as *;
+
+
+.icon{
+    display: inline-block;    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    @include xs{
+        @each $name,$size in $icon-size {
+            &.icon-#{$name}{
+                width: $size;
+                height: $size;
+            }    
+        }
+    }
+    @include sm{
+        @each $name,$size in $icon-size {
+            &.icon-sm-#{$name}{
+                width: $size;
+                height: $size;
+            }    
+        }
+    }
+    @include md{
+        @each $name,$size in $icon-size {
+            &.icon-md-#{$name}{
+                width: $size;
+                height: $size;
+            }    
+        }
+    }
+    @include lg{
+        @each $name,$size in $icon-size {
+            &.icon-lg-#{$name}{
+                width: $size;
+                height: $size;
+            }    
+        }
+    }
+    @include xl{
+        @each $name,$size in $icon-size {
+            &.icon-xl-#{$name}{
+                width: $size;
+                height: $size;
+            }    
+        }
+    }@include xxl{
+        @each $name,$size in $icon-size {
+            &.icon-xxl-#{$name}{
+                width: $size;
+                height: $size;
+            }    
+        }
+    }
+}

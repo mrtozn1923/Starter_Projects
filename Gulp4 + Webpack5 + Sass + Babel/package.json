@@ -1,0 +1,26 @@
+{
+  "name": "gulp-webpack-project",
+  "version": "1.0.0",
+  "description": "gulp 4 and webpack 5 starter project",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "mert ozen",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.17.12",
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "^9.8.8",
+    "babel-loader": "^8.2.5",
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.50.1",
+    "webpack": "^5.72.1",
+    "webpack-stream": "^7.0.0"
+  }
+}

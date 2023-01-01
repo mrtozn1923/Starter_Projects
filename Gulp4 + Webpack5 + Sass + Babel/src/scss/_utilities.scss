@@ -1,0 +1,672 @@
+@use 'variables' as *;
+@use 'breakpoints' as *;
+
+.color-primary{
+    color: $primary;
+}
+.color-secondary{
+    color: $secondary;
+}
+.bg-primary{
+    background-color: $background-primary;
+}
+.bg-secondary{
+    background-color: $background-secondary;
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.ml-auto{
+    margin-left: auto;
+}
+.mr-auto{
+    margin-right: auto;
+}
+
+//responsive text align
+@include xs{
+    .text-center{
+        text-align: center!important;
+    }
+    .text-right{
+        text-align: right!important;
+    }
+    .text-left{
+        text-align: left!important;
+    }
+}
+@include sm{
+    .text-sm-center{
+        text-align: center!important;
+    }
+    .text-sm-right{
+        text-align: right!important;
+    }
+    .text-sm-left{
+        text-align: left!important;
+    }
+}
+@include md{
+    .text-md-center{
+        text-align: center!important;
+    }
+    .text-md-right{
+        text-align: right!important;
+    }
+    .text-md-left{
+        text-align: left!important;
+    }
+}
+@include lg{
+    .text-lg-center{
+        text-align: center!important;
+    }
+    .text-lg-right{
+        text-align: right!important;
+    }
+    .text-lg-left{
+        text-align: left!important;
+    }
+}
+@include xl{
+    .text-xl-center{
+        text-align: center!important;
+    }
+    .text-xl-right{
+        text-align: right!important;
+    }
+    .text-xl-left{
+        text-align: left!important;
+    }
+}
+@include xxl{
+    .text-xxl-center{
+        text-align: center!important;
+    }
+    .text-xxl-right{
+        text-align: right!important;
+    }
+    .text-xxl-left{
+        text-align: left!important;
+    }
+}
+
+//responsive text
+@include xs {
+    @each $name,$size in $text-size {
+        .text-#{$name} {
+            font-size: $size;
+        }
+    }
+}
+@include sm {
+    @each $name,$size in $text-size {
+        .text-sm-#{$name} {
+            font-size: $size;
+        }
+    }
+}
+@include md {
+    @each $name,$size in $text-size {
+        .text-md-#{$name} {
+            font-size: $size;
+        }
+    }
+}
+@include lg {
+    @each $name,$size in $text-size {
+        .text-lg-#{$name} {
+            font-size: $size;
+        }
+    }
+}
+@include xl {
+    @each $name,$size in $text-size {
+        .text-xl-#{$name} {
+            font-size: $size;
+        }
+    }
+}
+@include xxl {
+    @each $name,$size in $text-size {
+        .text-xxl-#{$name} {
+            font-size: $size;
+        }
+    }
+}
+
+//responsive font-weight
+@include xs {
+    .fw-light{
+        font-weight: $fw-light!important;
+    }
+    .fw-regular{
+        font-weight: $fw-regular!important;
+    }
+    .fw-medium{
+        font-weight: $fw-medium!important;
+    }
+    .fw-semibold{
+        font-weight: $fw-semibold!important;
+    }
+    .fw-bold{
+        font-weight: $fw-bold!important;
+    }
+}
+@include sm {
+    .fw-sm-light{
+        font-weight: $fw-light!important;
+    }
+    .fw-sm-regular{
+        font-weight: $fw-regular!important;
+    }
+    .fw-sm-medium{
+        font-weight: $fw-medium!important;
+    }
+    .fw-sm-semibold{
+        font-weight: $fw-semibold!important;
+    }
+    .fw-sm-bold{
+        font-weight: $fw-bold!important;
+    }
+}
+@include md {
+    .fw-md-light{
+        font-weight: $fw-light!important;
+    }
+    .fw-md-regular{
+        font-weight: $fw-regular!important;
+    }
+    .fw-md-medium{
+        font-weight: $fw-medium!important;
+    }
+    .fw-md-semibold{
+        font-weight: $fw-semibold!important;
+    }
+    .fw-md-bold{
+        font-weight: $fw-bold!important;
+    }
+}
+@include lg {
+    .fw-lg-light{
+        font-weight: $fw-light!important;
+    }
+    .fw-lg-regular{
+        font-weight: $fw-regular!important;
+    }
+    .fw-lg-medium{
+        font-weight: $fw-medium!important;
+    }
+    .fw-lg-semibold{
+        font-weight: $fw-semibold!important;
+    }
+    .fw-lg-bold{
+        font-weight: $fw-bold!important;
+    }
+}
+@include xl {
+    .fw-xl-light{
+        font-weight: $fw-light!important;
+    }
+    .fw-xl-regular{
+        font-weight: $fw-regular!important;
+    }
+    .fw-xl-medium{
+        font-weight: $fw-medium!important;
+    }
+    .fw-xl-semibold{
+        font-weight: $fw-semibold!important;
+    }
+    .fw-xl-bold{
+        font-weight: $fw-bold!important;
+    }
+}
+@include xxl {
+    .fw-xxl-light{
+        font-weight: $fw-light!important;
+    }
+    .fw-xxl-regular{
+        font-weight: $fw-regular!important;
+    }
+    .fw-xxl-medium{
+        font-weight: $fw-medium!important;
+    }
+    .fw-xxl-semibold{
+        font-weight: $fw-semibold!important;
+    }
+    .fw-xxl-bold{
+        font-weight: $fw-bold!important;
+    }
+}
+//responsive margin
+@include xs {
+    @each $name,$position in $position-key {
+        @each $size-name,$value in $space-size {
+            @if($name=="m"){
+                .m-#{$size-name}{
+                    margin: $value;
+                }
+            }@else if($name=="x"){
+                .mx-#{$size-name} {
+                    margin-left: $value;
+                    margin-right: $value;
+                }
+            }@else if($name=="y"){
+                .my-#{$size-name} {
+                    margin-top: $value;
+                    margin-bottom: $value;
+                }
+            }
+            @else if(not($name=="m") and not($name=="p") and not($name=="x") and not($name=="y")){
+                .m#{$name}-#{$size-name} {
+                    margin-#{$position}: $value;
+                }
+            }
+        }
+    }
+}
+@include sm {
+    @each $name,$position in $position-key {
+        @each $size-name,$value in $space-size {
+            @if($name=="m"){
+                .m-sm-#{$size-name}{
+                    margin: $value;
+                }
+            }@else if($name=="x"){
+                .mx-sm-#{$size-name} {
+                    margin-left: $value;
+                    margin-right: $value;
+                }
+            }@else if($name=="y"){
+                .my-sm-#{$size-name} {
+                    margin-top: $value;
+                    margin-bottom: $value;
+                }
+            }
+            @else if(not($name=="m") and not($name=="p")){
+                .m#{$name}-sm-#{$size-name} {
+                    margin-#{$position}: $value;
+                }
+            }
+        }
+    }
+}
+@include md {
+    @each $name,$position in $position-key {
+        @each $size-name,$value in $space-size {
+            @if($name=="m"){
+                .m-md-#{$size-name}{
+                    margin: $value;
+                }
+            }@else if($name=="x"){
+                .mx-md-#{$size-name} {
+                    margin-left: $value;
+                    margin-right: $value;
+                }
+            }@else if($name=="y"){
+                .my-md-#{$size-name} {
+                    margin-top: $value;
+                    margin-bottom: $value;
+                }
+            }
+            @else if(not($name=="m") and not($name=="p")){
+                .m#{$name}-md-#{$size-name} {
+                    margin-#{$position}: $value;
+                }
+            }
+        }
+    }
+}
+@include lg {
+    @each $name,$position in $position-key {
+        @each $size-name,$value in $space-size {
+            @if($name=="m"){
+                .m-lg-#{$size-name}{
+                    margin: $value;
+                }
+            }@else if($name=="x"){
+                .mx-lg-#{$size-name} {
+                    margin-left: $value;
+                    margin-right: $value;
+                }
+            }@else if($name=="y"){
+                .my-lg-#{$size-name} {
+                    margin-top: $value;
+                    margin-bottom: $value;
+                }
+            }
+            @else if(not($name=="m") and not($name=="p")){
+                .m#{$name}-lg-#{$size-name} {
+                    margin-#{$position}: $value;
+                }
+            }
+        }
+    }
+}
+@include xl {
+    @each $name,$position in $position-key {
+        @each $size-name,$value in $space-size {
+            @if($name=="m"){
+                .m-xl-#{$size-name}{
+                    margin: $value;
+                }
+            }@else if($name=="x"){
+                .mx-xl-#{$size-name} {
+                    margin-left: $value;
+                    margin-right: $value;
+                }
+            }@else if($name=="y"){
+                .my-xl-#{$size-name} {
+                    margin-top: $value;
+                    margin-bottom: $value;
+                }
+            }
+            @else if(not($name=="m") and not($name=="p")){
+                .m#{$name}-xl-#{$size-name} {
+                    margin-#{$position}: $value;
+                }
+            }
+        }
+    }
+}
+@include xxl {
+    @each $name,$position in $position-key {
+        @each $size-name,$value in $space-size {
+            @if($name=="m"){
+                .m-xxl-#{$size-name}{
+                    margin: $value;
+                }
+            }@else if($name=="x"){
+                .mx-xxl-#{$size-name} {
+                    margin-left: $value;
+                    margin-right: $value;
+                }
+            }@else if($name=="y"){
+                .my-xxl-#{$size-name} {
+                    margin-top: $value;
+                    margin-bottom: $value;
+                }
+            }
+            @else if(not($name=="m") and not($name=="p")){
+                .m#{$name}-xxl-#{$size-name} {
+                    margin-#{$position}: $value;
+                }
+            }
+        }
+    }
+}
+
+//responsive padding
+@include xs {
+    @each $name,$position in $position-key {
+        @each $size-name,$value in $space-size {            
+            @if($name=="p"){
+                .p-#{$size-name}{
+                    padding: $value;
+                }
+            }@else if($name=="x"){
+                .px-#{$size-name} {
+                    padding-left: $value;
+                    padding-right: $value;
+                }
+            }@else if($name=="y"){
+                .py-#{$size-name} {
+                    padding-top: $value;
+                    padding-bottom: $value;
+                }
+            }@else if(not($name=="m") and not($name=="p")){
+                .p#{$name}-#{$size-name} {
+                    padding-#{$position}: $value;
+                }
+            }
+        }
+    }
+}
+@include sm {
+    @each $name,$position in $position-key {
+        @each $size-name,$value in $space-size {
+            @if($name=="p"){
+                .p-sm-#{$size-name}{
+                    padding: $value;
+                }
+            }@else if($name=="x"){
+                .px-sm-#{$size-name} {
+                    padding-left: $value;
+                    padding-right: $value;
+                }
+            }@else if($name=="y"){
+                .py-sm-#{$size-name} {
+                    padding-top: $value;
+                    padding-bottom: $value;
+                }
+            }
+            @else if(not($name=="m") and not($name=="p")){
+                .p#{$name}-sm-#{$size-name} {
+                    padding-#{$position}: $value;
+                }
+            }
+        }
+    }
+}
+@include md {
+    @each $name,$position in $position-key {
+        @each $size-name,$value in $space-size {
+            @if($name=="p"){
+                .p-md-#{$size-name}{
+                    padding: $value;
+                }
+            }@else if($name=="x"){
+                .px-md-#{$size-name} {
+                    padding-left: $value;
+                    padding-right: $value;
+                }
+            }@else if($name=="y"){
+                .py-md-#{$size-name} {
+                    padding-top: $value;
+                    padding-bottom: $value;
+                }
+            }
+            @else if(not($name=="m") and not($name=="p")){
+                .p#{$name}-md-#{$size-name} {
+                    padding-#{$position}: $value;
+                }
+            }
+        }
+    }
+}
+@include lg {
+    @each $name,$position in $position-key {
+        @each $size-name,$value in $space-size {
+            @if($name=="p"){
+                .p-lg-#{$size-name}{
+                    padding: $value;
+                }
+            }@else if($name=="x"){
+                .px-lg-#{$size-name} {
+                    padding-left: $value;
+                    padding-right: $value;
+                }
+            }@else if($name=="y"){
+                .py-lg-#{$size-name} {
+                    padding-top: $value;
+                    padding-bottom: $value;
+                }
+            }
+            @else if(not($name=="m") and not($name=="p")){
+                .p#{$name}-lg-#{$size-name} {
+                    padding-#{$position}: $value;
+                }
+            }
+        }
+    }
+}
+@include xl {
+    @each $name,$position in $position-key {
+        @each $size-name,$value in $space-size {
+            @if($name=="p"){
+                .p-xl-#{$size-name}{
+                    padding: $value;
+                }
+            }@else if($name=="x"){
+                .px-xl-#{$size-name} {
+                    padding-left: $value;
+                    padding-right: $value;
+                }
+            }@else if($name=="y"){
+                .py-xl-#{$size-name} {
+                    padding-top: $value;
+                    padding-bottom: $value;
+                }
+            }
+            @else if(not($name=="m") and not($name=="p")){
+                .p#{$name}-xl-#{$size-name} {
+                    padding-#{$position}: $value;
+                }
+            }
+        }
+    }
+}
+@include xxl {
+    @each $name,$position in $position-key {
+        @each $size-name,$value in $space-size {
+            @if($name=="p"){
+                .p-xxl-#{$size-name}{
+                    padding: $value;
+                }
+            }@else if($name=="x"){
+                .px-xxl-#{$size-name} {
+                    padding-left: $value;
+                    padding-right: $value;
+                }
+            }@else if($name=="y"){
+                .py-xxl-#{$size-name} {
+                    padding-top: $value;
+                    padding-bottom: $value;
+                }
+            }
+            @else if(not($name=="m") and not($name=="p")){
+                .p#{$name}-xxl-#{$size-name} {
+                    padding-#{$position}: $value;
+                }
+            }
+        }
+    }
+}
+
+//responsive display
+@include xs {
+    @each $name,$value in $display-prop {
+        .d-#{$name} {
+            display: $value!important;
+        }
+    }
+}
+@include sm {
+    @each $name,$value in $display-prop {
+        .d-sm-#{$name} {
+            display: $value!important;
+        }
+    }
+}
+@include md {
+    @each $name,$value in $display-prop {
+        .d-md-#{$name} {
+            display: $value!important;
+        }
+    }
+}
+@include lg {
+    @each $name,$value in $display-prop {
+        .d-lg-#{$name} {
+            display: $value!important;
+        }
+    }
+}
+@include xl {
+    @each $name,$value in $display-prop {
+        .d-xl-#{$name} {
+            display: $value!important;
+        }
+    }
+}
+@include xxl {
+    @each $name,$value in $display-prop {
+        .d-xxl-#{$name} {
+            display: $value!important;
+        }
+    }
+}
+
+//order
+@include xs{
+    .order-1{
+        order: 1!important;
+    }
+    .order-2{
+        order: 2!important;
+    }
+    .order-3{
+        order: 3!important;
+    }
+}
+
+@include sm{
+    .order-sm-1{
+        order: 1!important;
+    }
+    .order-sm-2{
+        order: 2!important;
+    }
+    .order-sm-3{
+        order: 3!important;
+    }
+}
+
+@include md{
+    .order-md-1{
+        order: 1!important;
+    }
+    .order-md-2{
+        order: 2!important;
+    }
+    .order-md-3{
+        order: 3!important;
+    }
+}
+
+@include lg{
+    .order-lg-1{
+        order: 1!important;
+    }
+    .order-lg-2{
+        order: 2!important;
+    }
+    .order-lg-3{
+        order: 3!important;
+    }
+}
+
+@include xl{
+    .order-xl-1{
+        order: 1!important;
+    }
+    .order-xl-2{
+        order: 2!important;
+    }
+    .order-xl-3{
+        order: 3!important;
+    }
+}
+
+@include xxl{
+    .order-xxl-1{
+        order: 1!important;
+    }
+    .order-xxl-2{
+        order: 2!important;
+    }
+    .order-xxl-3{
+        order: 3!important;
+    }
+}
